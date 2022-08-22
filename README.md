@@ -56,11 +56,13 @@ Getting started with Json-Web-Token
 
             4. *[Index.cshtml](#indexcshtml)*
 
-2. **To Start**
+2. To Start
 
 	1. **[backend](#backend-1)**
 
 	2. **[frontend](#frontend-1)**
+
+3. [Screenshots](#screenshots)
 
 
 ## backend
@@ -505,7 +507,7 @@ public async Task<IActionResult> Delete(Product product)
 
     Build the solution
 
-    ```powershell
+    ```ps
     dotnet ef database update
     ```
 
@@ -521,9 +523,7 @@ public async Task<IActionResult> Delete(Product product)
     
 3. **POST** method
     
-    ```
     https://localhost:5001/api/authenticate
-    ```
 
     There in *basic auth* use these credentials
 
@@ -543,9 +543,7 @@ public async Task<IActionResult> Delete(Product product)
 
 4. **GET** method
 
-    ```
     https://localhost:5001/api/products
-    ```
 
     There in *Bearer Token* use the [token](#token-would-be-generated) generated
 
@@ -560,10 +558,25 @@ public async Task<IActionResult> Delete(Product product)
 
 #### Run it using either of the command
 
-```
+```ps
 dotnet run
 ```
 
-```
+```ps
 dotnet watch run
 ```
+
+
+## Screenshots
+
+1. Login
+![image](https://user-images.githubusercontent.com/76637730/185850124-b8f7f06f-4bbc-4ced-847a-fe0184899393.png)
+
+2. Index
+![image](https://user-images.githubusercontent.com/76637730/185850168-47e32268-2566-482c-ba02-d4ec566c327b.png)
+
+3. Create
+![image](https://user-images.githubusercontent.com/76637730/185850311-5c8adf04-dc3a-4274-9eaf-d5352e5ec16e.png)
+
+4. Edit
+![image](https://user-images.githubusercontent.com/76637730/185850218-e0bed450-b83b-4c35-9666-1398e984dc1b.png)
